@@ -6,12 +6,12 @@
   line-height: 1.1;
   color: $primary;
 
-  &--h1 { font-size: 38px; text-align: center;}
+  &--h1 { font-size: 38px; }
   &--h2 { font-size: 38px; }
+  &--h3 { font-size: 32px; }
 }
 
 .paragraph {
-  padding-top: 1.5em;
   font-family: $font-primary;
   font-weight: 400;
   font-size: 16px;
@@ -20,8 +20,7 @@
 
   &__link {
     color: $secondary;
-    &:hover {
-      text-decoration: none;
-    }
+
+    &:hover { text-decoration: none; }
   }
 }

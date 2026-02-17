@@ -1,0 +1,13 @@
+.section {
+  display: grid;
+  place-items: center;
+  padding: 30px 0;
+
+  &__content {
+    max-width: 720px;
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    justify-items: center;
+  }
+}
