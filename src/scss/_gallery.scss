@@ -13,8 +13,13 @@
   &__item {
     border-radius: 20px;
     overflow: hidden;
+    cursor: pointer;
 
-    // img1: 380x500
+    &:focus-visible {
+      outline: 3px solid $secondary;
+      outline-offset: 4px;
+    }
+
     &:nth-child(1) {
       @media (min-width: $breakpoint-md) {
         grid-row: 1 / 3;

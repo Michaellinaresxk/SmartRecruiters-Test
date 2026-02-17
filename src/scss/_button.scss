@@ -33,4 +33,9 @@
 
     &:hover { background-color: $quaternary; color: $secondary; }
   }
+
+   &:focus-visible {
+    outline: 3px solid $primary;
+    outline-offset: 4px;
+  }
 }
