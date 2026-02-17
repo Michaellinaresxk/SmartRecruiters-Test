@@ -18,5 +18,9 @@
     @media (min-width: $breakpoint-md) {
       justify-items: center;
     }
+
+    &--wide {
+      max-width: 1200px;
+    }
   }
 }
