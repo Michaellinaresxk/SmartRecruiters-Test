@@ -9,22 +9,21 @@ const playButtons =
 
 let lastFocusedElement: HTMLElement | null = null;
 
-function openModal(): void {
+export function openModal(): void {
   if (!modal || !iframe) return;
+
   lastFocusedElement = document.activeElement as HTMLElement;
   iframe.src = `${YOUTUBE_URL}?autoplay=1`;
   modal.showModal();
 
-  // setTimeout 0 → wait for Safari to finish rendering the dialog before focusing the close button
   closeBtn?.focus();
-  setTimeout(() => {
-    closeBtn?.focus();
-  }, 0);
+  setTimeout(() => closeBtn?.focus(), 0); // Safari fix
 }
 
-function closeModal(): void {
+export function closeModal(): void {
   if (!modal || !iframe) return;
   modal.close();
+  iframe.src = '';
 }
 
 galleryItems.forEach((item) => {

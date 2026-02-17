@@ -48,7 +48,7 @@
         <div class="gallery" role="list" aria-label="Video gallery">
           <figure class="gallery__item">
             <img class="gallery__image" src="img/img-1.png" alt="Green robot character floating" />
-            <button class="gallery__play" aria-label="Play video: Green robot">
+            <button class="gallery__play" aria-label="Play video: Green robot" >
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.5)" />
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
@@ -58,7 +58,7 @@
 
           <figure class="gallery__item">
             <img class="gallery__image" src="img/img-2.png" alt="Team collaborating in office" />
-            <button class="gallery__play" aria-label="Play video: Team meeting">
+            <button class="gallery__play" aria-label="Play video: Team meeting" data-testid="open-modal-btn">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.5)" />
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
@@ -68,7 +68,7 @@
 
           <figure class="gallery__item">
             <img class="gallery__image" src="img/img-3.png" alt="Robot organizing documents" />
-            <button class="gallery__play" aria-label="Play video: Robot at work">
+            <button class="gallery__play" aria-label="Play video: Robot at work" data-testid="open-modal-btn">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.5)" />
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
@@ -78,7 +78,7 @@
 
           <figure class="gallery__item">
             <img class="gallery__image" src="img/img-4.png" alt="City skyline at sunset" />
-            <button class="gallery__play" aria-label="Play video: City view">
+            <button class="gallery__play" aria-label="Play video: City view" data-testid="open-modal-btn">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.5)" />
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
@@ -100,11 +100,11 @@
     </main>
 
     <!-- Modal -->
-    <dialog class="modal" aria-label="Video player">
+    <dialog class="modal" aria-label="Video player" data-testid="video-modal">
       <div class="modal__content">
         <div class="modal__header">
           <h2 class="heading heading--h3">Modal Heading</h2>
-          <button class="modal__close" aria-label="Close modal">✕</button>
+          <button class="modal__close" aria-label="Close modal" data-testid="close-modal-btn">✕</button>
         </div>
         <p class="paragraph">
           Lorem <em>ipsum</em> dolor sit amet, <strong>consectetur</strong> adipiscing elit,
@@ -119,6 +119,7 @@
             title="SmartRecruiters video"
             allow="autoplay; encrypted-media"
             allowfullscreen
+            data-testid="video-iframe"
           ></iframe>
         </div>
       </div>
