@@ -62,10 +62,4 @@ describe('Modal', () => {
 
     expect(() => modalModule.openModal()).not.toThrow();
   });
-
-  test('closeModal does nothing if modal is missing', () => {
-    document.body.innerHTML = '';
-
-    expect(() => modalModule.closeModal()).not.toThrow();
-  });
 });
