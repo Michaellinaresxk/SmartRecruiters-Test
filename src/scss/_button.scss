@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.button {
+  font-family: $font-primary;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &--primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover { background-color: $quaternary; color: $primary; }
+  }
+
+  &--secondary {
+    background-color: $secondary;
+    color: $white;
+
+    &:hover { background-color: $quaternary; color: $secondary; }
+  }
+}
