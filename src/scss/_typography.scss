@@ -1,0 +1,27 @@
+@use 'variables' as *;
+
+.heading {
+  font-family: $font-primary;
+  font-weight: 700;
+  line-height: 1.1;
+  color: $primary;
+
+  &--h1 { font-size: 38px; text-align: center;}
+  &--h2 { font-size: 38px; }
+}
+
+.paragraph {
+  padding-top: 1.5em;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: $content;
+
+  &__link {
+    color: $secondary;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
