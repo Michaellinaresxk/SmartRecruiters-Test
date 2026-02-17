@@ -17,9 +17,9 @@ Responsive gallery component with interactive YouTube video modal, built as a ta
 - [x] Responsive gallery component based on Figma designs
 - [x] Interactive modal with embedded YouTube video autoplay
 - [x] Modal close button stops video playback
-- [ ] WCAG 2.1 AA accessibility compliance
-- [ ] Keyboard navigation support with proper ARIA attributes
-- [ ] Cross-browser compatibility (Chrome, Firefox, Safari, Edge)
+- [x] WCAG 2.1 AA accessibility compliance
+- [x] Keyboard navigation support with proper ARIA attributes
+- [x] Cross-browser compatibility (Chrome, Firefox, Safari, Edge)
 - [ ] Unit tests for component behavior and user interactions
 
 ## Tech Stack
