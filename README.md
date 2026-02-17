@@ -22,6 +22,7 @@ Responsive gallery component with interactive YouTube video modal, built as a ta
 - **SASS/SCSS** — Styling with BEM naming convention
 - **TypeScript** — Interactive functionality
 - **Inter** — Typography via Google Fonts
+- **Jest** — Delightful JavaScript Testing
 
 > No JS frameworks (React, Vue, Angular) or CSS frameworks (Tailwind, Bootstrap) were used.
 
@@ -30,27 +31,15 @@ Responsive gallery component with interactive YouTube video modal, built as a ta
 ### Installation
 
 git clone https://github.com/Michaellinaresxk/SmartRecruiters-Test.git
-cd Test
+cd SmartRecruiters-Test
 
 ### Tests
 
 bash
 npm run test
 
-## Project Structure
-
-Test/
-├── src/
-│   ├── index.html
-│   ├── css/
-│   │   ├── styles.css
-|   ├── js/
-|       ├── scripts.js
-├── tests/
-└── README.md
-
 ## Design Reference
 
-- [Figma Designs](https://www.figma.com/design/V6vjx6d5Nw3WiXT60c8u4F/SmartRecruiters-Attrax---Candidate-Task?node-id=0-1&t=4gahRjbdFKev8Sbi-1)
+- [Figma Designs](https://www.figma.com/design/V6vjx6d5Nw3WiXT60c8u4F/SmartRecruiters-Attrax---Candidate-Task?node-id=12-464&t=HYaMkHwt6tzXLZaC-0)
 
 - [Inter Font](https://fonts.google.com/selection/embed)
