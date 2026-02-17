@@ -38,4 +38,10 @@
     outline: 3px solid $primary;
     outline-offset: 4px;
   }
+
+  &:focus-visible,
+  &:focus {  // ← Safari fallback for :focus-visible
+    outline: 3px solid $primary;
+    outline-offset: 4px;
+  }
 }

@@ -9,23 +9,22 @@ const playButtons =
 
 let lastFocusedElement: HTMLElement | null = null;
 
-playButtons.forEach((btn) => {
-  btn.addEventListener('click', openModal);
-});
-
 function openModal(): void {
   if (!modal || !iframe) return;
   lastFocusedElement = document.activeElement as HTMLElement;
   iframe.src = `${YOUTUBE_URL}?autoplay=1`;
   modal.showModal();
+
+  // setTimeout 0 → wait for Safari to finish rendering the dialog before focusing the close button
   closeBtn?.focus();
+  setTimeout(() => {
+    closeBtn?.focus();
+  }, 0);
 }
 
 function closeModal(): void {
   if (!modal || !iframe) return;
-  iframe.src = '';
   modal.close();
-  lastFocusedElement?.focus();
 }
 
 galleryItems.forEach((item) => {
@@ -38,13 +37,17 @@ galleryItems.forEach((item) => {
   });
 });
 
-closeBtn?.addEventListener('click', closeModal);
-
-modal?.addEventListener('click', (e: MouseEvent) => {
-  if (e.target === modal) closeModal();
+playButtons.forEach((btn) => {
+  btn.addEventListener('click', () => openModal());
 });
+
+closeBtn?.addEventListener('click', closeModal);
 
 modal?.addEventListener('close', () => {
   if (iframe) iframe.src = '';
   lastFocusedElement?.focus();
+});
+
+modal?.addEventListener('click', (e: MouseEvent) => {
+  if (e.target === modal) closeModal();
 });
