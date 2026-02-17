@@ -4,8 +4,14 @@ const modal = document.querySelector<HTMLDialogElement>('.modal');
 const iframe = document.querySelector<HTMLIFrameElement>('.modal__iframe');
 const closeBtn = document.querySelector<HTMLButtonElement>('.modal__close');
 const galleryItems = document.querySelectorAll<HTMLElement>('.gallery__item');
+const playButtons =
+  document.querySelectorAll<HTMLButtonElement>('.gallery__play');
 
 let lastFocusedElement: HTMLElement | null = null;
+
+playButtons.forEach((btn) => {
+  btn.addEventListener('click', openModal);
+});
 
 function openModal(): void {
   if (!modal || !iframe) return;
