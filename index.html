@@ -40,24 +40,48 @@
  <section class="section">
     <div class="section__content section__content--wide">
       <div class="gallery">
-        <div class="gallery__item">
+        <div class="gallery__item" role="button" tabindex="0" aria-label="Play video">
           <img class="gallery__image" src="img/img-1.png" alt="Green robot character floating" />
         </div>
-        <div class="gallery__item">
+        <div class="gallery__item" role="button" tabindex="0" aria-label="Play video">
           <img class="gallery__image" src="img/img-2.png" alt="Team collaborating in office" />
         </div>
-        <div class="gallery__item">
+        <div class="gallery__item" role="button" tabindex="0" aria-label="Play video">
           <img class="gallery__image" src="img/img-3.png" alt="Robot organizing documents" />
         </div>
-        <div class="gallery__item gallery__item--wide">
+        <div class="gallery__item" role="button" tabindex="0" aria-label="Play video">
           <img class="gallery__image" src="img/img-4.png" alt="City skyline at sunset" />
-        </div>
-        <div class="gallery__item">
+          </div>
+        <div class="gallery__item" role="button" tabindex="0" aria-label="Play video">
           <img class="gallery__image" src="img/img-5.png" alt="Woman writing at desk" />
         </div>
       </div>
     </div>
   </section>
+
+  <dialog class="modal" aria-label="Video player">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="heading heading--h3">Modal Heading</h2>
+        <button class="modal__close" aria-label="Close modal">✕</button>
+      </div>
+      <p class="paragraph">
+        Lorem <em>ipsum</em> dolor sit amet, <strong>consectetur</strong> adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        <a href="#" class="paragraph__link">minim</a> veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="modal__video">
+        <iframe
+          class="modal__iframe"
+          src=""
+          title="SmartRecruiters video"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </dialog>
 
 
 
