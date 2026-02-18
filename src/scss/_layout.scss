@@ -5,12 +5,11 @@
   place-items: center;
   padding: 10px 16px;
 
-
   &--hero {
-    padding-top: 48px;
+    padding-top: 20px;
 
     @media (min-width: $breakpoint-md) {
-      padding-top: 80px;
+      padding-top: 30px;
     }
   }
 
@@ -24,8 +23,16 @@
       justify-items: center;
     }
 
+    @media (min-width: $breakpoint-xl) {
+      max-width: 900px;
+    }
+
     &--wide {
       max-width: 1200px;
+
+      @media (min-width: $breakpoint-xl) {
+        max-width: 1400px;
+      }
     }
   }
 }

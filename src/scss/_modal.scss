@@ -44,9 +44,15 @@
   }
 
   &__video {
-    aspect-ratio: 16 / 9;
+    // ✅ Móvil: vertical
+    aspect-ratio: 9 / 16;
     border-radius: 12px;
     overflow: hidden;
+
+    // ✅ Desktop: horizontal
+    @media (min-width: $breakpoint-md) {
+    aspect-ratio: 16 / 9;
+   }
   }
 
   &__iframe {
@@ -55,7 +61,7 @@
     border: none;
   }
 
-   &:focus-visible {
+  &:focus-visible {
     outline: 3px solid $white;
     outline-offset: 4px;
   }
