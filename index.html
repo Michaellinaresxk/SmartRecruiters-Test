@@ -13,7 +13,7 @@
   <body>
 
     <!-- Header: Heading + Links -->
-    <header class="section">
+    <header class="section section--hero">
       <div class="section__content">
         <h1 class="heading heading--h1">Gallery Heading</h1>
         <p class="paragraph">
@@ -31,13 +31,13 @@
       <div class="section__content">
         <h2 class="heading heading--h3">Gallery Links</h2>
         <div class="gallery-links__buttons">
-          <a href="#" class="button button--primary">
+          <button class="button button--primary">
             Gallery Link One
             <span aria-hidden="true">★</span>
-          </a>
-          <a href="#" class="button button--secondary">
+          </button>
+          <button href="#" class="button button--secondary">
             Gallery Link Two
-          </a>
+          </button>
         </div>
       </div>
     </nav>
@@ -45,18 +45,18 @@
     <!-- Gallery -->
     <main class="section">
       <div class="section__content section__content--wide">
-        <div class="gallery" role="list" aria-label="Video gallery">
-          <figure class="gallery__item">
+        <ul class="gallery" role="list" aria-label="Video gallery">
+          <li class="gallery__item">
             <img class="gallery__image" src="img/img-1.png" alt="Green robot character floating" />
-            <button class="gallery__play" aria-label="Play video: Green robot" >
+            <button class="gallery__play" aria-label="Play video: Green robot">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.5)" />
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
               </svg>
             </button>
-          </figure>
+          </li>
 
-          <figure class="gallery__item">
+          <li class="gallery__item">
             <img class="gallery__image" src="img/img-2.png" alt="Team collaborating in office" />
             <button class="gallery__play" aria-label="Play video: Team meeting" data-testid="open-modal-btn">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -64,9 +64,9 @@
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
               </svg>
             </button>
-          </figure>
+          </li>
 
-          <figure class="gallery__item">
+          <li class="gallery__item">
             <img class="gallery__image" src="img/img-3.png" alt="Robot organizing documents" />
             <button class="gallery__play" aria-label="Play video: Robot at work" data-testid="open-modal-btn">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -74,9 +74,9 @@
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
               </svg>
             </button>
-          </figure>
+          </li>
 
-          <figure class="gallery__item">
+          <li class="gallery__item">
             <img class="gallery__image" src="img/img-4.png" alt="City skyline at sunset" />
             <button class="gallery__play" aria-label="Play video: City view" data-testid="open-modal-btn">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -84,9 +84,9 @@
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
               </svg>
             </button>
-          </figure>
+          </li>
 
-          <figure class="gallery__item">
+          <li class="gallery__item">
             <img class="gallery__image" src="img/img-5.png" alt="Woman writing at desk" />
             <button class="gallery__play" aria-label="Play video: Woman working">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -94,8 +94,19 @@
                 <path d="M20 16l12 8-12 8V16z" fill="white" />
               </svg>
             </button>
-          </figure>
-        </div>
+          </li>
+
+          <li class="gallery__item">
+            <footer>
+              <p class="paragraph">
+                <small>
+                  <strong>Gallery media copyright</strong>
+                  - Lorem ipsum dolor sit amet.
+                </small>
+              </p>
+            </footer>
+          </li>
+        </ul>
       </div>
     </main>
 
@@ -125,14 +136,7 @@
       </div>
     </dialog>
 
-   <footer class="footer">
-    <p class="paragraph">
-      <small>
-        <strong>Gallery media copyright</strong>
-        - Lorem ipsum dolor sit amet.
-      </small>
-    </p>
-  </footer>
+
 
     <script type="module" src="dist/js/main.js"></script>
   </body>

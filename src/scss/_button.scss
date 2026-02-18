@@ -1,13 +1,11 @@
 @use 'variables' as *;
 
 .button {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 16px;
+  gap: 8px;
+  padding: 8px 24px;
   font-family: $font-primary;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
   text-decoration: none;
   border-radius: 8px;
   border: none;
@@ -16,7 +14,6 @@
 
   @media (min-width: $breakpoint-md) {
     gap: 8px;
-    padding: 8px 24px;
     font-size: 16px;
   }
 

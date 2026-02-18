@@ -1,9 +1,14 @@
 @use 'variables' as *;
 
 .gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
   display: grid;
   gap: 16px;
   grid-template-columns: 1fr;
+
   @media (min-width: $breakpoint-md) {
     grid-template-columns: repeat(3, 380px);
     grid-template-rows: 250px 250px 250px;
