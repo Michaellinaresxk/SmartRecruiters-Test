@@ -73,6 +73,9 @@ npm run test
 - Focus trap within modal
 - Descriptive alt text on all images
 
+> **macOS note:** Tab navigation is disabled by default on macOS. To enable it, go to
+**System Settings → Keyboard** and turn on **"Use keyboard navigation to move focus between controls"**.
+
 ## References
 
 - [Figma Design](https://www.figma.com/design/V6vjx6d5Nw3WiXT60c8u4F/)
