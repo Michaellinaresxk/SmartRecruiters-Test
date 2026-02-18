@@ -2,7 +2,7 @@
 
 .heading {
   font-family: $font-primary;
-  font-weight: 700;
+  font-weight: $font-weight-headings;
   line-height: 1.1;
   color: $primary;
 
@@ -13,7 +13,7 @@
 
 .paragraph {
   font-family: $font-primary;
-  font-weight: 400;
+  font-weight: $font-weight-paragraph;
   font-size: clamp(14px, 2.5vw, 16px);
   line-height: 1.4;
   color: $content;
@@ -23,4 +23,8 @@
 
     &:hover { text-decoration: none; }
   }
+}
+
+.link {
+  font-weight: $font-weight-semibold;
 }

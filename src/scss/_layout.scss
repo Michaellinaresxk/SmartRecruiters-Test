@@ -3,10 +3,15 @@
 .section {
   display: grid;
   place-items: center;
-  padding: 24px 16px;
+  padding: 10px 16px;
 
-  @media (min-width: $breakpoint-md) {
-    padding: 40px 16px;
+
+  &--hero {
+    padding-top: 48px;
+
+    @media (min-width: $breakpoint-md) {
+      padding-top: 80px;
+    }
   }
 
   &__content {
